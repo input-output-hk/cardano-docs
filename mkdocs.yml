@@ -1,9 +1,55 @@
 site_name: Cardano S/L
 theme: readthedocs
 pages:
+    # Index page where we explain what is Cardano, how to use the guide,
+    # and what the Cardano Foundation is
     - Home: index.md
+    # Go straight into downloading the official software,
+    # mainly the wallet and the client for all major OS
     - Installation: installation.md
-    - Getting Started: getting_started.md
+    # Menu for people getting started
+    - Getting Started:
+        # Simple explanations for voucher holders
+        - Using your voucher: getting-started/using-vouchers.md
+        # Simple explanations for people who want to join the system
+        - Creating a new account: getting-started/new-account.md
+        # Introduction for people who want to buy Ada (because Ada is explained
+        # later on, this should link to that)
+        - Buying Ada: getting-started/buying-ada.md
+        # Demonstrate how to generate a transaction (because addresses are
+        # explained later on, this should link to that)
+        - Your first transaction: getting-started/first-transaction.md
+        # Explain how to participate in the protocol and the rewards for
+        # doing so
+        - Participating in the protocol: getting-started/participating.md
+    # Menu for the design choices taken in Cardano
+    - Cardano building blocks:
+        # Explain address format and types
+        - Addresses: cardano/addresses.md
+        # Explain the concept and the contruction of a transaction
+        - Transactions: cardano/transactions.md
+        # Explain (briefly) and link to PoS, and why it's important
+        - Provably Secure Proof-of-Stake (PoS): cardano/proof-of-stake.md
+        # Menu for Plutus
+        - Scripting:
+            # Intro to why one would use Plutus
+            - Introduction: cardano/plutus/introduction.md
+            # Explain how Plutus types work
+            - Types: cardano/plutus/types.md
+            # Show some usage examples of Plutus
+            - Examples: cardano/plutus/examples.md
+        # Explain the update mechanism
+        - Updating: cardano/updating.md
+        # Explain the reward system
+        - Rewards: cardano/rewards.md
+    # Menu for Ada
+    - Ada:
+        # Explain what Ada is and its divisibility
+        - What is Ada?: ada/what-is-ada.md
+        # Explain the Monetary Policy
+        - Monetary Policy: ada/monetary-policy.md
+    # Definitions of all terms used in the documentation
+    - Glossary: glossary.md
 markdown_extensions:
     - toc:
         permalink: True
