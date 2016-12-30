@@ -38,6 +38,8 @@ pages:
             - Types: cardano/plutus/types.md
             # Show some usage examples of Plutus
             - Examples: cardano/plutus/examples.md
+        # Explain the P2P layer for people writing alt-clients
+        - Joining the network: cardano/network.md
         # Explain the update mechanism
         - Updating: cardano/updating.md
         # Explain the reward system
