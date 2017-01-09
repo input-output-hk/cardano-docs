@@ -52,6 +52,12 @@ pages:
         - What is Ada?: ada/what-is-ada.md
         # Explain the Monetary Policy
         - Monetary Policy: ada/monetary-policy.md
+    # Developer's corner
+    - Contributor's Guide:
+        # Explain how to build the entire stack from source
+        - Building From Source: for-contributors/building-from-source.md
+        # Talk about ways to contribute
+        - How to Contribute: for-contributors/guide.md
     # Definitions of all terms used in the documentation
     - Glossary: glossary.md
 markdown_extensions:
