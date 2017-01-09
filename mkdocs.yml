@@ -1,4 +1,4 @@
-site_name: Cardano S/L
+site_name: Cardano SL
 theme: readthedocs
 pages:
     # Index page where we explain what is Cardano, how to use the guide,
@@ -9,6 +9,8 @@ pages:
     - Installation: installation.md
     # Menu for people getting started
     - Getting Started:
+        # Make sure people understand UI and UX
+        - Navigating in the User Interface: getting-started/ui.md
         # Simple explanations for voucher holders
         - Using your voucher: getting-started/using-vouchers.md
         # Simple explanations for people who want to join the system
@@ -30,6 +32,8 @@ pages:
         - Transactions: cardano/transactions.md
         # Explain (briefly) and link to PoS, and why it's important
         - Provably Secure Proof-of-Stake (PoS): cardano/proof-of-stake.md
+        # Explain the reward system
+        - Rewards: cardano/rewards.md
         # Menu for Plutus
         - Scripting:
             # Intro to why one would use Plutus
@@ -42,8 +46,6 @@ pages:
         - Joining the network: cardano/network.md
         # Explain the update mechanism
         - Updating: cardano/updating.md
-        # Explain the reward system
-        - Rewards: cardano/rewards.md
     # Menu for Ada
     - Ada:
         # Explain what Ada is and its divisibility
