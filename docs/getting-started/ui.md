@@ -27,8 +27,66 @@ holds _information and extra options_.
 
 ## Wallet
 
-Denoted with a simple icon that represents a physical wallet.
-Highlighted upon hovering. Each sub-menu contains information about b in
-ada corresponding to each wallet; an option to send  and receive money
-(highlighted upon hovering). Each wallet shows transaction history,
-chronologically ordered.
+Denoted with an icon that represents a physical wallet.  Highlighted
+upon hovering. Each sub-menu contains information about Ada balance
+corresponding to each wallet; an option to _send_ and _receive_ money
+(highlighted upon hovering). Each wallet shows chronologically ordered
+transaction history.
+
+### Send Money
+
+To send money you should click on “Send Money” button and fill in dialog
+consisting of the following inputs:
+
+ 1. Receiver (Ada address)
+ 2. Amount (In Ada tokens)
+ 3. Description (Optional)
+ 4. Send button
+
+### Receive Money
+
+If you want to receive money from someone and want to tell them your
+address, click “Receive Money” button. In the midsection your address
+will be displayed, as well as its QR encoding.
+
+We're working on generating requests for specific amounts of Ada.
+Below will be a field to do so (inactive at the moment).
+
+Upon clicking either sending or receiving, the menu will stay the same,
+showing wallet balance.
+
+When you click on the hamburger button, a sub-menu is expanded, listing
+your wallets and providing you with an option to add a new wallet.
+
+## Settings
+
+Denoted with a double toggle icon on the far left side of the page.
+Upon clicking, a profile editing page with following fields
+opens:
+
+ 1. Name
+ 2. E-mail
+ 3. Profile picture upload
+ 4. Phone number
+ 5. Password
+ 6. Language
+ 
+You can upload a profile picture by
+dragging and dropping a file or clicking to upload. 
+
+Password field shows when the password was last updated.
+
+On the right side more groups of settings can be seen (aside from the
+Profile that was already discussed previously):
+
+ 1. Security
+ 2. Identity and Verification
+ 3. Display
+ 4. Privacy
+ 5. Terms of Use
+
+## Staking
+
+Staking information, delegation and Instant Buy options are something
+we're considering to add in the nearest future. For now, the process of
+staking is carried out autmatically on background.
