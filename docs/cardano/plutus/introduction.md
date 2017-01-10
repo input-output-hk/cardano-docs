@@ -24,7 +24,7 @@ constructed by two constructors, `Leaf`, which has no arguments, and `Branch`,
 which has three arguments, a left subtree of type `Tree a`, a value of type
 `a`, and a right subtree of type `Tree a`.
 
-We can pattern match on data using the `case` construct, like so:
+We can inspect data using the `case` construct, like so:
 
     case t of {
       Leaf -> ... ;
