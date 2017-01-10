@@ -68,7 +68,7 @@ After the project is built, the built binaries can be launched
 using the `stack exec` command. Let's discuss important binaries briefly
 before proceeding to next steps.
 
-### Cardano-node
+### cardano-node
 
 Binary `cardano-node` is the most important binary of the system. It
 launches nodes. In order to attach to a network, Hardened Kadmelia DHT
