@@ -181,8 +181,32 @@ of things, just two matters have to be addressed —
 
 ### Generating Types for Daedalus Bridge
 
-_Pending_
+To generate types, simply run
+
+```
+stack exec -- cardano-wallet-hs2purs
+```
+
+It will print a warning message that is safe to ignore. Once the types
+are generated, we can proceed to the next step.
 
 ### Building Daedalus Bridge
 
-_Pending_
+To build Daedalus Bridge, we have to do some JavaScript heavy-lifting.
+Notice that currently Nix expressions don't install Node.js and NPM, so
+you'll have to get those manually. To do that, consult the repositories
+of the package manager of your OS or download binaries from [the
+net](https://nodejs.org/en/download/).
+
+To build Daedalus Bridge with npm installed, run the following commands:
+
+```
+cd daedalus
+npm install
+```
+
+Notice that importantly, running `npm install` will register
+`daedalus-bridge` in local npm package repository. This way, at any
+time, you can satisfy `daedalus-bridge` dependency in any project that
+depends on it by manually running `npm link daedalus-bridge`. We will
+come to this later on in this manual.
