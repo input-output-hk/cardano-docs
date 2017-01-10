@@ -171,3 +171,18 @@ stack exec -- cardano-smart-generator \
   --init-money 100000 \
   --peer 127.0.0.1:3000/MHdtsP-oPf7UWly007QuXnLK5RD=
 ```
+
+Now that we know the purpose of the most important binaries and how to
+run those, let's proceed with building the wallet. On the Haskell side
+of things, just two matters have to be addressed —
+
+ 1. Generate types for `daedalus-bridge`
+ 2. Build Daedalus Bridge
+
+### Generating Types for Daedalus Bridge
+
+_Pending_
+
+### Building Daedalus Bridge
+
+_Pending_
