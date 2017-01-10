@@ -210,3 +210,26 @@ Notice that importantly, running `npm install` will register
 time, you can satisfy `daedalus-bridge` dependency in any project that
 depends on it by manually running `npm link daedalus-bridge`. We will
 come to this later on in this manual.
+
+## Building Daedalus
+
+If you have followed instructions of building Cardano SL and the Bridge,
+building Daedalus wallet is as simple as cloning Daedalus repository:
+
+```
+git clone https://github.com/input-output-hk/daedalus.git
+cd daedalus
+```
+
+Then executing the following command:
+
+```
+npm install
+```
+
+Now to run the wallet connected to the Cardano SL in dev-mode, you
+simply have to call
+
+```
+npm run dev
+```
