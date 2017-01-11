@@ -12,6 +12,8 @@
 [//]: # (TODO: When we have a glossary, make sure that all the)
 [//]: # (      terms mentioned in this document are hyperlinked)
 
+![cardano](/img/cardano.png)
+
 Cardano SL (SL stands for "Settlement Layer") is a cryptographic
 currency designed and developed by [IOHK](https://iohk.io/team). You can
 think of this product as of Bitcoin reimagined with a freedom to fix
@@ -30,7 +32,7 @@ section. If you're eager to start working with Cardano SL, refer to
 
 Before giving a definition of a cryptocurrency, let's first talk about
 why do we care about digital currencies in general and cryptographic
-currencies in particular. 
+currencies in particular.
 
 ### Why Do We Care?
 
