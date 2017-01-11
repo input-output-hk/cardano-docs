@@ -110,23 +110,23 @@ stack exec -- cardano-node \
 
 ### cardano-smart-generator
 
-A tool to test that transactions are getting properly sent by a node in
-a network and to stress-test it is called `cardano-smart-generator`.
+A tool which tests if transactions are accordingly sent by a node in
+a network; a stress-test can be invocated by `cardano-smart-generator`.
 This tool is designed to provide reasonable and reliable measurements of
 transactions per second (or TPS).
 
 It works in few rounds, each split in few phases.
 
-At start, initial transaction is submited. This transaction uses unspent
-output from genesis address, index of which is supplied as `--index`
+At start, the initial transaction is submited. This transaction uses unspent
+output from the genesis address, index of which is supplied as `--index`
 argument and creates `(k + P) * slotDuration * maxTPS` outputs, which
 would be used for further transactions. `k` (block depth to treat
-transaction stable) and `P` (approximate amount of slots needed for a
+transaction as stable) and `P` (approximate amount of slots needed for a
 transaction to be successfully published in a block) are parameters
 here. During our benchmarks we were using `k=6` and `P=2` with hundred
 nodes.
 
-Each round `cardano-smart-generator` tests that system is capable of
+Each round of `cardano-smart-generator` tests that the system is capable of
 handling a concrete TPS value. It goes from value provided by `--tps`
 CLI argument and adjusts it every step by `--tps-step` value. Both can
 be fractional (double precision floats). The process will continue for
@@ -136,25 +136,25 @@ This way, `maxTps = initTps + tpsStep * N`.
 
 All further transactions are `(in, 1, A)`, where 
 
- + `A` is owner of `in`;
+ + `A` is the owner of `in`;
  + 1 is the amount of coins transferred;
- + `in` is output of previous transaction;  
+ + `in` is the output of previous transaction;  
  
-Each subsequent transaction is being sent only if we saw parent included
-into block of depth `k` (i.e.  stable). This way we have no way to
-produce more transactions then node can include into blocks.
+Each subsequent transaction is being sent only if the parent is included
+into block of depth `k` (i.e stable). This way there's no possibility
+of producing more transactions than a node can include into blocks.
 
 Each round is split to `(R + 2)` phases. On each phase transactions are
-sent with current TPS rate. On the first phase no measurements being
-taken.  On the last phase no new transactions get emmitted, only
-confirmations for sent ones being collected. 
+sent with current TPS rate. On the first phase no measurements are taken.gq
+On the last phase no new transactions get emmitted, only confirmations
+for sent ones being collected.
 
 Each phase takes `(k + P) * slotDuration` seconds, where `P` is
-approximate amount of slots needed for successful transaction to be
+approximate amount of slots needed for a successful transaction to be
 published in block.
 
-Transactions are sent in few threads, each thread uses its own
-transaction pool derived from its own index in genesis block."
+Transactions are sent in a few threads. Each thread uses its own
+transaction pool derived from its own index in genesis block.
 
 Here is an example of invocation of `cardano-smart-generator` sending
 transactions from node number zero:
@@ -172,9 +172,10 @@ stack exec -- cardano-smart-generator \
   --peer 127.0.0.1:3000/MHdtsP-oPf7UWly007QuXnLK5RD=
 ```
 
-Now that we know the purpose of the most important binaries and how to
-run those, let's proceed with building the wallet. On the Haskell side
-of things, just two matters have to be addressed —
+The purpose of the most important binaries and basic
+operations with said binaries is clarified, let's proceed with building
+the wallet. On the Haskell side of things, just two matters have to be
+addressed —
 
  1. Generate types for `daedalus-bridge`
  2. Build Daedalus Bridge
