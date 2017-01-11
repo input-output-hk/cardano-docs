@@ -103,9 +103,9 @@ Markdown comment should be inserted about last version of software for
 which a certain piece of documentation was verified to be actual. Valid
 values are:
 
- + `[//]: # (@any)` documentation is future-compatible, and valid for
+ + `[//]: # (%any)` documentation is future-compatible, and valid for
     any software revision.
- + `[//]: # (@feature-branch)` documentation is actual on
+ + `[//]: # (%feature-branch)` documentation is actual on
     `feature-branch` branch. Should only be used with feature branches.
     When such branch (perhaps, along with documentation) will get merged
     into `master` or `develop`, documentation will become unverified and
@@ -117,7 +117,7 @@ values are:
    is actual for commit `6e663b8eabc5acfe970892a607e48f85443931bd` and
    will be considered unverified when a new version is pushed.
 
-Most sections should be labeled with `@` or `v` comments.
+Most sections should be labeled with `%` or `v` comments.
 
 In any section, if an issue is mentioned in Markdown commentaries, an
 automation will be put in place in that will report changes of the
@@ -127,6 +127,13 @@ syntax to mention an issue in a commentary:
 ```
 [//]: # (To be implemented in [CSL-228])
 ```
+
+User names are referred to using `@` syntax. Example:
+
+```
+[//]: # (Design team and @richard-wild)
+```
+
 
 ## Pushing Incomplete Documentation
 
@@ -156,7 +163,7 @@ sections will become unverified and a maintenance shall be required.
 As a part of sprint planning, markers should be inserted in the
 documentation that shall mark sections as unverified after a particular
 date. Syntax for sprint-related changes is the following:
-`[//]: # <2017-01-29>`.
+`[//]: # (<2017-01-29>)`.
 
 ## Feedback Request Marker
 
