@@ -3,7 +3,7 @@ theme: readthedocs
 pages:
     # Index page where we explain what is Cardano, how to use the guide,
     # and what the Cardano Foundation is
-    - Home: index.md
+    - (NEEDS MARKETING FEEDBACK) Introduction: index.md
     # Go straight into downloading the official software,
     # mainly the wallet and the client for all major OS
     - Installation: installation.md
