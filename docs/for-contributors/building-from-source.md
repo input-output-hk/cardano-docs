@@ -197,7 +197,12 @@ To build Daedalus Bridge, some JavaScript heavy-lifting must be done.
 Currently Nix expressions don't install Node.js and NPM, so
 those have to be installed manually. To do that, consult the repositories
 of the package manager of according OS or download binaries from [the
-net](https://nodejs.org/en/download/).
+net](https://nodejs.org/en/download/) you also will need the following
+npm packages: `bower`, `pulp`, `purescript`. Those can be installed with
+
+```
+npm install -g bower pulp purescript
+```
 
 To build Daedalus Bridge with npm installed, run the following commands:
 
