@@ -10,17 +10,17 @@ pages:
     # Menu for people getting started
     - Getting Started:
         # Make sure people understand UI and UX
-        - Navigating in the User Interface: getting-started/ui.md
-        ## Simple explanations for voucher holders
-        #- Using your voucher: getting-started/using-vouchers.md
-        ## Simple explanations for people who want to join the system
-        #- Creating a new account: getting-started/new-account.md
-        ## Introduction for people who want to buy Ada (because Ada is explained
-        ## later on, this should link to that)
-        #- Buying Ada: getting-started/buying-ada.md
+        - (NEEDS DESIGN) Navigating in the User Interface: getting-started/ui.md
+        # Simple explanations for voucher holders
+        - (NEEDS AVVM) Using your voucher: getting-started/using-vouchers.md
+        # Simple explanations for people who want to join the system
+        - (NEEDS AVVM) Creating a new account: getting-started/new-account.md
+        # Introduction for people who want to buy Ada (because Ada is explained
+        # later on, this should link to that)
+        - (NEEDS EXECUTIVE FEEDBACK) Buying Ada: getting-started/buying-ada.md
         # Demonstrate how to generate a transaction (because addresses are
         # explained later on, this should link to that)
-        - Your first transaction: getting-started/first-transaction.md
+        - (NEEDS DESIGN) Your first transaction: getting-started/first-transaction.md
         ## Explain how to participate in the protocol and the rewards for
         ## doing so
         #- Participating in the protocol: getting-started/participating.md

@@ -1,4 +1,4 @@
-# !INCOMPLETE! Your First Transaction
+# Your First Transaction
 
 [//]: # (<2017-01-13>)
 [//]: # (Design team and @richard-wild)
