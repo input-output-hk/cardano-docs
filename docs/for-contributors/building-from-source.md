@@ -207,8 +207,9 @@ npm install
 ```
 
 Running `npm install` will register `daedalus-bridge` in local npm
-package repository. This way, at any time, `daedalus-bridge` dependency can be satisfied in any project that
-depends on it by manually running `npm link daedalus-bridge`.
+package repository. This way, at any time, `daedalus-bridge`
+dependency can be satisfied in any project that depends on it by
+manually running `npm link daedalus-bridge`.
 
 ## Building Daedalus
 
