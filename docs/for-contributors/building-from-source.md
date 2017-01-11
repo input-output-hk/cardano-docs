@@ -182,21 +182,21 @@ addressed —
 
 ### Generating Types for Daedalus Bridge
 
-To generate types, simply run
+To generate types, run
 
 ```
 stack exec -- cardano-wallet-hs2purs
 ```
 
-It will print a warning message that is safe to ignore. Once the types
-are generated, we can proceed to the next step.
+A warning message will be printed that is safe to ignore. Once the types
+are generated, proceed to the next step.
 
 ### Building Daedalus Bridge
 
-To build Daedalus Bridge, we have to do some JavaScript heavy-lifting.
-Notice that currently Nix expressions don't install Node.js and NPM, so
-you'll have to get those manually. To do that, consult the repositories
-of the package manager of your OS or download binaries from [the
+To build Daedalus Bridge, some JavaScript heavy-lifting must be done.
+Currently Nix expressions don't install Node.js and NPM, so
+those have to be installed manually. To do that, consult the repositories
+of the package manager of according OS or download binaries from [the
 net](https://nodejs.org/en/download/).
 
 To build Daedalus Bridge with npm installed, run the following commands:
@@ -206,30 +206,27 @@ cd daedalus
 npm install
 ```
 
-Notice that importantly, running `npm install` will register
-`daedalus-bridge` in local npm package repository. This way, at any
-time, you can satisfy `daedalus-bridge` dependency in any project that
-depends on it by manually running `npm link daedalus-bridge`. We will
-come to this later on in this manual.
+Running `npm install` will register `daedalus-bridge` in local npm
+package repository. This way, at any time, `daedalus-bridge` dependency can be satisfied in any project that
+depends on it by manually running `npm link daedalus-bridge`.
 
 ## Building Daedalus
 
-If you have followed instructions of building Cardano SL and the Bridge,
-building Daedalus wallet is as simple as cloning Daedalus repository:
+If the instructions of building Cardano SL and the Bridge have been followed,
+building Daedalus wallet is as simple as cloning Daedalus' repository:
 
 ```
 git clone https://github.com/input-output-hk/daedalus.git
 cd daedalus
 ```
 
-Then executing the following command:
+Then execute the following command:
 
 ```
 npm install
 ```
 
-Now to run the wallet connected to the Cardano SL in dev-mode, you
-simply have to call
+Now to run the wallet connected to the Cardano SL in dev-mode, call
 
 ```
 npm run dev
