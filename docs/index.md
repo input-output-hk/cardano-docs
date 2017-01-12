@@ -30,7 +30,7 @@ section. If you're eager to start working with Cardano SL, refer to
 
 Before giving a definition of a cryptocurrency, let's first talk about
 why do we care about digital currencies in general and cryptographic
-currencies in particular. 
+currencies in particular.
 
 ### Why Do We Care?
 
@@ -169,8 +169,3 @@ program called [Daedalus]() into a universal cryptocurrency wallet
 with automated cryptocurrency trading and cryptocurrency-to-fiat
 transactions.
 
-## Cardano Foundation
-
-[//]: # (TODO: Marketing)
-
-_Pending_
