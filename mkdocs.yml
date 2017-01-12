@@ -24,6 +24,16 @@ pages:
         ## Explain how to participate in the protocol and the rewards for
         ## doing so
         #- Participating in the protocol: getting-started/participating.md
+    # Eras of Cardano SL Network
+    - Cardano Timeline:
+        # Talk about Testnet release
+        - Testnet Era: timeline/testnet.md
+        # Talk about Initial release and maintaining network stability
+        - Boostrap Era: timeline/bootstrap.md
+        # Talk about reward era
+        - Reward Era: timeline/reward.md
+        # Goodies that will get released later in 2017
+        - Future Updates: timeline/future.md
     # Menu for the design choices taken in Cardano
     - Cardano building blocks:
         # Explain address format and types
@@ -38,8 +48,8 @@ pages:
         - Scripting:
             # Intro to why one would use Plutus
             - Introduction: cardano/plutus/introduction.md
-            # Explain how Plutus types work
-            - Types: cardano/plutus/types.md
+            ## Explain how Plutus types work
+            #- Types: cardano/plutus/types.md
             # Show some usage examples of Plutus
             - Examples: cardano/plutus/examples.md
         # Explain the P2P layer for people writing alt-clients
