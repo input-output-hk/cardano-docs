@@ -56,12 +56,12 @@ pages:
     - Contributor's Guide:
         # Explain how to build the entire stack from source
         - Building From Source: for-contributors/building-from-source.md
-        # How to run the network using EC2
-        - Running Private Deployments: for-contributors/deployment.md
+        ## How to run the network using EC2
+        #- Running Private Deployments: for-contributors/deployment.md
         # Actualizezd “Implementation Guide to Cardano SL”, ported to Markdown
         - Implementation Guide: for-contributors/implementation.md
-        # Talk about ways to contribute
-        - How to Contribute: for-contributors/guide.md
+        ## Talk about ways to contribute
+        #- How to Contribute: for-contributors/guide.md
     # Definitions of all terms used in the documentation
     - Glossary: glossary.md
 markdown_extensions:
