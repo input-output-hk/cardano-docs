@@ -119,18 +119,18 @@ _Pending_
 
 ## Forks
 
-Generally, one chain (the _main chain_) is maintained by a node. But eventually
+Generally, one chain (the _main chain_) is maintained by a node, but eventually
 alternative chains may arise. Recall that only blocks `k` and more slots deep
-are considered stable. This way if we receive a block which is neither a
-part nor a continuation of our blockchain, we first check if its complexity
+are considered stable. This way if a block which is neither a
+part nor a continuation of our blockchain is received, we first check if its complexity
 is bigger than ours (the complexity is the length of the chain), we start
-subsequently request previous blocks from node that provided alternative chain
+subsequently request previous blocks from the node that provided alternative chain
 header. If we come deeper than `k` slots ago, the alternative chain gets
-rejected. Otherwise, once we got to the block, existing in our chain, the
-alternative chain is getting added to storage. So from the standpoint of
-state we store and "maintain" all the alternative chains that are viable.
-Also, if it appears that an alternative chain is longer than main chain, they
-get swapped, making the alternative chain the new main chain.
+rejected. Otherwise, once we get to the block existing in our chain, the
+alternative chain is getting added to storage. From the standpoint of
+state, we store and "maintain" all the alternative chains that are viable.
+If it appears that an alternative chain is longer than the main chain, they
+are swapped, making the alternative chain the new main chain.
 
 ## Supplemental parts
 
@@ -156,10 +156,11 @@ further?_
 
 ### Slotting
 
-The consensus scheme we use relies on correct slotting. More specifically, it
+The consensus scheme used relies on correct slotting. More specifically, it
 relies on the assumption that nodes in the system have access to the current
-time (small deviations are acceptable), which is used to figure out when any
-particular slot begins and ends, and do particular actions in that slot.
+time (small deviations are acceptable), which is then used to figure
+out when any particular slot begins and ends, and do particular
+actions in that slot.
 
 System start time is a timestamp of the (0,0) slot (i.e. the 0th slot of
 the 0th epoch).
@@ -170,13 +171,13 @@ _Pending: Is the timelord-timeslave scheme still relevant?_
 
 ### Peer discovery
 
-For peer discovery we use Kademlia DHT. It’s a general solution for distributed
+For peer discovery  Kademlia DHT is used. It’s a general solution for distributed
 hash tables, based on [whitepaper by Petar Maymounkov and David Mazières,
 2002.](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
 
 However, it's not used as a table, only its peer discovery mechanism.
 
-In short, each node in the Kademlia network is provided an `160`-bit id,
+In short, each node in the Kademlia network is provided a `160`-bit id which is
 randomly generated. Distance between nodes is defined by `XOR` metric. Network
 is organized in such way that node knows no more than `K` (`K=7` in  the
 original client implementation) nodes for each relative distance
@@ -184,11 +185,12 @@ range: `2^i < d <= 2^(i+1)`.
 
 ### Messaging
 
-Kademlia already provides us with notion of nodes we know which we simply call
-_neighbors_. To send message to all nodes in network, you can send it to
-neighbors, they resend it to their neighbors, and so on. But sometimes we may
-need to not propagate messages across all network, but instead send it to
-neighbors only. Hence we have three types of sending:
+Kademlia already provides the notion of nodes that are known. Which
+can be simply called _neighbors_. To send message to all nodes in
+network, you can send it to neighbors, they resend it to their
+neighbors, and so on. But sometimes we may need to not propagate
+messages across all network, but instead send it to neighbors
+only. Hence we have three types of sending:
 
 - Send to node
 - Send to neighbors
@@ -196,14 +198,14 @@ neighbors only. Hence we have three types of sending:
 
 #### Message types
 
-To handle this we use three kind of message headers, there's two message types:
+To handle this three kind of message headers are used, there's two message types:
 
-- Simple: _Pending: Describe how a Simple message is implemented_
-- Broadcast:  _Pending: Describe how a Broadcast message is implemented_
+- Simple: _Pending: Describes how a Simple message is implemented_
+- Broadcast:  _Pending: Describes how a Broadcast message is implemented_
 
 Broadcast messages are getting resent to neighbors right after retrieval (before
-handling). Also, they are being checked against LRU cache and messages already
-received once get ignored.
+handling). Also, they are being checked against LRU cache and messages
+that are already received once get ignored.
 
 ## Constants
 
