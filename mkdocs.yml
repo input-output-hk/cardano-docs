@@ -29,9 +29,9 @@ pages:
         # Explain address format and types
         - Addresses: cardano/addresses.md
         # Explain the concept and the contruction of a transaction
-        - (WIP Jonn) Transactions: cardano/transactions.md
+        - Transactions: cardano/transactions.md
         # Explain (briefly) and link to PoS, and why it's important
-        - Ouroboros Consensus Algorithm: cardano/proof-of-stake.md
+        - (WIP Jonn) Ouroboros Consensus Algorithm: cardano/proof-of-stake.md
         # Explain the reward system
         - Rewards: cardano/rewards.md
         # Menu for Plutus
