@@ -10,8 +10,8 @@ private key from [Cardano SL Testnet Faucet]().
 
 On January 21st 2017, testnet will be reset and users will be asked to
 download new, updated version of Cardano SL. This part of testnet era
-can be thought of beta testing, resulting in the release of Cardano SL
-in February.
+can be thought of beta testing, resulting in the
+[release](/timeline/bootstrap) of Cardano SL in February.
 
 We encourage everyone to download Cardano SL client for your platform,
 get some coins from the faucet and invite other people to participate in
