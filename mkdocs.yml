@@ -3,7 +3,7 @@ theme: readthedocs
 pages:
     # Index page where we explain what is Cardano, how to use the guide,
     # and what the Cardano Foundation is
-    - (NEEDS MARKETING FEEDBACK) Introduction: index.md
+    - (NEEDS MARKETING WORK) Introduction: index.md
     # Go straight into downloading the official software,
     # mainly the wallet and the client for all major OS
     - Installation: installation.md
@@ -33,7 +33,7 @@ pages:
         # Explain (briefly) and link to PoS, and why it's important
         - Ouroboros Consensus Algorithm: cardano/proof-of-stake.md
         # Explain the reward system
-        - Rewards: cardano/rewards.md
+        - (NEEDS ENGINEER FEEDBACK) Rewards: cardano/rewards.md
         # Menu for Plutus
         - Scripting:
             # Intro to why one would use Plutus
@@ -43,15 +43,15 @@ pages:
             # Show some usage examples of Plutus
             - Examples: cardano/plutus/examples.md
         # Explain the P2P layer for people writing alt-clients
-        - Joining the network: cardano/network.md
+        - (NEEDS ENGINEER FEEDBACK) Joining the network: cardano/network.md
         # Explain the update mechanism
         - Updating: cardano/updating.md
     # Menu for Ada
     - Ada:
         # Explain what Ada is and its divisibility
-        - What is Ada?: ada/what-is-ada.md
+        - (NEEDS EXECUTIVE FEEDBACK) What is Ada?: ada/what-is-ada.md
         # Explain the Monetary Policy
-        - Monetary Policy: ada/monetary-policy.md
+        - (NEEDS EXECUTIVE FEEDBACK) Monetary Policy: ada/monetary-policy.md
     # Developer's corner
     - Contributor's Guide:
         # Explain how to build the entire stack from source
