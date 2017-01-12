@@ -27,9 +27,9 @@ pages:
     # Menu for the design choices taken in Cardano
     - Cardano building blocks:
         # Explain address format and types
-        - (WIP Jonn) Addresses: cardano/addresses.md
+        - Addresses: cardano/addresses.md
         # Explain the concept and the contruction of a transaction
-        - Transactions: cardano/transactions.md
+        - (WIP Jonn) Transactions: cardano/transactions.md
         # Explain (briefly) and link to PoS, and why it's important
         - Ouroboros Consensus Algorithm: cardano/proof-of-stake.md
         # Explain the reward system
