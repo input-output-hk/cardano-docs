@@ -1,9 +1,7 @@
 # Get Cardano SL
 
- +
- [Windows](https://github.com/input-output-hk/pos-haskell-prototype/tree/master/installers)
- +
- [macOS](https://github.com/input-output-hk/pos-haskell-prototype/tree/master/installers)
+ + [Windows](https://github.com/input-output-hk/pos-haskell-prototype/tree/master/installers)
+ + [macOS](https://github.com/input-output-hk/pos-haskell-prototype/tree/master/installers)
 
 [//]: # (|^| Yep, now Mac OS X is written as macOS. I know, right?)
 
@@ -15,7 +13,7 @@ Source](/for-contributors/building-from-source) section.
 
 In January 2017 the network enters [testnet era](/timeline/testnet/). A
 test network is released and anyone interested in using Cardano SL can
-claim Ada by requesting it from the [Cardano SL Testnet Faucet]().
+claim Ada by requesting it from the Cardano SL Testnet Faucet.
 During this period of time we aim to excessively test all the protocol
 capabilities, eliminating possible implementation problems that can lead
 to the network instability. Testnet will get reset once during this
