@@ -18,6 +18,7 @@ Many more features are coming soon, so stay tuned for the update
 changelogs and changes to this documentation!
 
 ## Layout
+![Daedalus balance](/img/daedalus/balance.jpg)
 
 The general layout of the UI gives room to split into left, middle and
 right section, excluding the header, footer and margins used for
@@ -26,6 +27,7 @@ _the menu_, middle refers to _main contents_ of page in question, right
 holds _information and extra options_.
 
 ## Wallet
+![Daedalus wallet](/img/daedalus/wallet.jpg)
 
 Denoted with an icon that represents a physical wallet.  Highlighted
 upon hovering. Each sub-menu contains information about Ada balance
@@ -34,6 +36,7 @@ corresponding to each wallet; an option to _send_ and _receive_ money
 transaction history.
 
 ### Send Money
+![Daedalus transaction](/img/daedalus/send.jpg)
 
 To send money you should click on “Send Money” button and fill in dialog
 consisting of the following inputs:
@@ -59,6 +62,7 @@ When you click on the hamburger button, a sub-menu is expanded, listing
 your wallets and providing you with an option to add a new wallet.
 
 ## Settings
+![Daedalus identity](/img/daedalus/identity.jpg)
 
 Denoted with a double toggle icon on the far left side of the page.
 Upon clicking, a profile editing page with following fields
@@ -70,9 +74,9 @@ opens:
  4. Phone number
  5. Password
  6. Language
- 
+
 You can upload a profile picture by
-dragging and dropping a file or clicking to upload. 
+dragging and dropping a file or clicking to upload.
 
 Password field shows when the password was last updated.
 
@@ -86,6 +90,7 @@ Profile that was already discussed previously):
  5. Terms of Use
 
 ## Staking
+![Daedalus identity](/img/daedalus/staking.jpg)
 
 Staking information, delegation and Instant Buy options are something
 we're considering to add in the nearest future. For now, the process of
