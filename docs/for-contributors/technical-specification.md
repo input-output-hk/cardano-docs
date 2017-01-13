@@ -1,5 +1,7 @@
 # Technical Specification
 
+[//]: # (<2017-01-15>)
+
 ## Block Headers
 
 ### Block Versions
