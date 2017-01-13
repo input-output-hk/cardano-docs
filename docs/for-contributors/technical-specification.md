@@ -1,9 +1,5 @@
 # Technical Specification
 
-## Block Chain
-
-The following sections describe core block details
-
 ## Block Headers
 
 ### Block Versions
@@ -18,4 +14,16 @@ The following sections describe core block details
 
 ## P2P Network
 
+### Initial Peers
 
+The list of initial peers
+
+### Peer Discovery
+
+### Conecting To Peers
+
+### Initial Block Download
+
+### Block Broadcasting
+
+### Transaction Broadcasting
