@@ -16,7 +16,11 @@
 
 ### Initial Peers
 
-The list of initial peers
+The list of initial peers is below:
+
+- `someip` (_Pending_)
+- `anotherip` (_Pending_)
+- `thatotherip` (_Pending_)
 
 ### Peer Discovery
 
