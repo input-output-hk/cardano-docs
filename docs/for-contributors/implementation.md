@@ -50,8 +50,10 @@ supplemental listeners will not be covered, instead focusing on the main ones:
 - Block listeners:
     - `handleBlock`: Handles an incoming block. Takes transactions from it,
        sends the block header to other nodes, etc.
-    - `handleBlockHeader`: Handles an incoming block header. Decides whether the block is needed or not; if it is then request the block.
-    - `handleBlockRequest`: Handles an incoming block request. If block is in possession, sends it to the other node.
+    - `handleBlockHeader`: Handles an incoming block header. Decides whether the
+      block is needed or not; if it is then request the block.
+    - `handleBlockRequest`: Handles an incoming block request. If block is in
+      possession, sends it to the other node.
 
 - Transaction listeners:
     - `handleTx`: Processes a single transaction.
@@ -206,6 +208,10 @@ To handle this three kind of message headers are used, there's two message types
 Broadcast messages are getting resent to neighbors right after retrieval (before
 handling). Also, they are being checked against LRU cache and messages
 that are already received once get ignored.
+
+## Time Warp
+
+_Pending_
 
 ## Constants
 
