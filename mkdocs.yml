@@ -30,7 +30,7 @@ pages:
         # Talk about reward era
         - Reward Era: timeline/reward.md
     # Menu for the design choices taken in Cardano
-    - Cardano building blocks:
+    - Cardano SL Building Blocks:
         # Explain address format and types
         - Addresses: cardano/addresses.md
         # Explain the concept and the contruction of a transaction
@@ -58,9 +58,11 @@ pages:
         ## Explain the Monetary Policy
         #- (NEEDS EXECUTIVE FEEDBACK) Monetary Policy: ada/monetary-policy.md
     # Developer's corner
-    - Contributor's Guide:
+    - Developer's Guide:
         # Explain how to build the entire stack from source
         - Building From Source: for-contributors/building-from-source.md
+        # Technical specs for each part
+        - Technical Specification: for-contributors/technical-specification.md
         ## How to run the network using EC2
         #- Running Private Deployments: for-contributors/deployment.md
         ## Actualizezd “Implementation Guide to Cardano SL”, ported to Markdown
