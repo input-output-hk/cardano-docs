@@ -6,6 +6,11 @@
 
 ### AVL+ Trees
 
+Cardano SL Block Headers use [an improved authenticated dynamic data
+structure](https://eprint.iacr.org/2016/994.pdf). The improvements to the
+design of authenticated dictionaries reduce proof size and speed up
+verification.
+
 ## Transactions
 
 ### Addresses
