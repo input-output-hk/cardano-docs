@@ -1,5 +1,6 @@
 site_name: Cardano SL
 theme: readthedocs
+theme_dir: themes/cardanodocs
 pages:
     # Index page where we explain what is Cardano, how to use the guide
     -  Introduction: index.md
