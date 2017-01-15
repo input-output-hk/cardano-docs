@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Navigating in the User Interface - Cardano SL</title>
+
+  <link href="../../css/app.css" rel="stylesheet" media="screen">
+  <link href="../../css/app-theme.1.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="all" />
+  
+  <script>
+    var mkdocs_page_name = "Navigating in the User Interface";
+    var mkdocs_page_input_path = "getting-started/ui.md";
+    var mkdocs_page_url = "/getting-started/ui/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default  navbar-inverse">
+    <div class="container">
+
+      <div class="navbar-header cardano logo">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cardano-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="http://static.iohk.io/cardano/images/cardano-white-120.png" alt="" width="40" height="36" /> <span>Cardano SL</span></a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        
+
+                <form id ="rtd-search-form" class="navbar-form navbar-right" action="../../search.html" method="get">
+                  <div class="form-group">
+                    <input type="text" name="q" class="form-control" placeholder="Search docs ... ">
+                  </div>
+                  <button type="submit" class="btn btn-default"><em class="fa fa-search"></em></button>
+                </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<div class="navbar-grad"></div>
+
+
+  <div class="container">
+      <!-- left, vertical navbar & content -->
+      <div class="row">
+          <!-- left, vertical navbar -->
+          <div class="col-md-3 col-sm-4 col-left">
+            	<ul class="nav navbar-collapse collapse navbar-side" id="cardano-nav">
+                
+                  <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Introduction</a>
+        
+    </li>
+<li>
+                
+                  <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../installation/">Installation</a>
+        
+    </li>
+<li>
+                
+                  <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Navigating in the User Interface</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#navigating-in-daedalus-user-interface">Navigating in Daedalus User Interface</a></li>
+                
+                    <li><a class="toctree-l4" href="#layout">Layout</a></li>
+                
+                    <li><a class="toctree-l4" href="#wallet">Wallet</a></li>
+                
+                    <li><a class="toctree-l4" href="#settings">Settings</a></li>
+                
+                    <li><a class="toctree-l4" href="#staking">Staking</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../first-transaction/">Your first transaction</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+                
+                  <li>
+    <ul class="subnav">
+    <li><span>Cardano Timeline</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../timeline/testnet/">Testnet Era</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../timeline/bootstrap/">Boostrap Era</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../timeline/reward/">Reward Era</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+                
+                  <li>
+    <ul class="subnav">
+    <li><span>Cardano building blocks</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cardano/addresses/">Addresses</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cardano/transactions/">Transactions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cardano/proof-of-stake/">Ouroboros Consensus Algorithm</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cardano/plutus/introduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cardano/plutus/types/">Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cardano/plutus/examples/">Examples</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+                
+                  <li>
+    <ul class="subnav">
+    <li><span>Contributor's Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../for-contributors/building-from-source/">Building From Source</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+                
+                  <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+                
+              </ul>
+
+          </div>
+
+          <!-- content -->
+          <div class="col-md-9 col-sm-8">
+
+              
+<ol class="breadcrumb">
+  <li><a href="../..">Docs</a></li>
+  
+    
+      
+        <li>Getting Started</li>
+      
+    
+  
+  <li>Navigating in the User Interface</li>
+  <li class="">
+    
+  </li>
+</ol>
+              <div class="main" role="main">
+                  
+                    <h1 id="navigating-in-daedalus-user-interface">Navigating in Daedalus User Interface<a class="headerlink" href="#navigating-in-daedalus-user-interface" title="Permanent link">&para;</a></h1>
+<p>Daedalus, the wallet of Cardano SL offers a multitude of functions, that
+are easy and intuitive to use. Menu animations flow well and have a
+zero-distraction mode. UI is minimalistic, color scheme is neutral. The
+structure is concise and easy to follow. We've built Daedalus for your
+convenience, prioritizing user experience and intuitive design. Current
+feature set is minimalistic, most importantly it consists of options to</p>
+<ul>
+<li>Check your balance</li>
+<li>Make transactions</li>
+<li>Create custom "wallets" tailored for your needs</li>
+<li>Set up identity</li>
+</ul>
+<p>Many more features are coming soon, so stay tuned for the update
+changelogs and changes to this documentation!</p>
+<h2 id="layout">Layout<a class="headerlink" href="#layout" title="Permanent link">&para;</a></h2>
+<p><img alt="Daedalus balance" src="../../img/daedalus/balance.jpg" /></p>
+<p>The general layout of the UI gives room to split into left, middle and
+right section, excluding the header, footer and margins used for
+composition. When referred to in the document, the left side refers to
+<em>the menu</em>, middle refers to <em>main contents</em> of page in question, right
+holds <em>information and extra options</em>.</p>
+<h2 id="wallet">Wallet<a class="headerlink" href="#wallet" title="Permanent link">&para;</a></h2>
+<p><img alt="Daedalus wallet" src="../../img/daedalus/wallet.jpg" /></p>
+<p>Denoted with an icon that represents a physical wallet.  Highlighted
+upon hovering. Each sub-menu contains information about Ada balance
+corresponding to each wallet; an option to <em>send</em> and <em>receive</em> money
+(highlighted upon hovering). Each wallet shows chronologically ordered
+transaction history.</p>
+<h3 id="send-money">Send Money<a class="headerlink" href="#send-money" title="Permanent link">&para;</a></h3>
+<p><img alt="Daedalus transaction" src="../../img/daedalus/send.jpg" /></p>
+<p>To send money you should click on “Send Money” button and fill in dialog
+consisting of the following inputs:</p>
+<ol>
+<li>Receiver (Ada address)</li>
+<li>Amount (In Ada tokens)</li>
+<li>Description (Optional)</li>
+<li>Send button</li>
+</ol>
+<h3 id="receive-money">Receive Money<a class="headerlink" href="#receive-money" title="Permanent link">&para;</a></h3>
+<p>If you want to receive money from someone and want to tell them your
+address, click “Receive Money” button. In the midsection your address
+will be displayed, as well as its QR encoding.</p>
+<p>We're working on generating requests for specific amounts of Ada.
+Below will be a field to do so (inactive at the moment).</p>
+<p>Upon clicking either sending or receiving, the menu will stay the same,
+showing wallet balance.</p>
+<p>When you click on the hamburger button, a sub-menu is expanded, listing
+your wallets and providing you with an option to add a new wallet.</p>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<p><img alt="Daedalus identity" src="../../img/daedalus/identity.jpg" /></p>
+<p>Denoted with a double toggle icon on the far left side of the page.
+Upon clicking, a profile editing page with following fields
+opens:</p>
+<ol>
+<li>Name</li>
+<li>E-mail</li>
+<li>Profile picture upload</li>
+<li>Phone number</li>
+<li>Password</li>
+<li>Language</li>
+</ol>
+<p>You can upload a profile picture by
+dragging and dropping a file or clicking to upload.</p>
+<p>Password field shows when the password was last updated.</p>
+<p>On the right side more groups of settings can be seen (aside from the
+Profile that was already discussed previously):</p>
+<ol>
+<li>Security</li>
+<li>Identity and Verification</li>
+<li>Display</li>
+<li>Privacy</li>
+<li>Terms of Use</li>
+</ol>
+<h2 id="staking">Staking<a class="headerlink" href="#staking" title="Permanent link">&para;</a></h2>
+<p><img alt="Daedalus identity" src="../../img/daedalus/staking.jpg" /></p>
+<p>Staking information, delegation and Instant Buy options are something
+we're considering to add in the nearest future. For now, the process of
+staking is carried out autmatically on background.</p>
+                  
+              </div>
+          </div>
+          <!-- end content -->
+      </div>
+
+  </div>
+
+
+  <div id="foot" class="foot noprint">
+      <footer>
+          <div class="grad"></div>
+
+          <div class="links network text-center">
+              <a href="http://daedaluswallet.io/" target="_blank">Daedalus Wallet</a>  |
+              <a href="" target="_blank">Cardano SL Statistics</a> |
+              <a href="" target="_blank">Cardano SL Explorer</a> |
+              <a href="" target="_blank">Cardano ADA Faucet</a> |
+              <a href="http://cardano-docs.rtfd.io" target="_blank">Cardano SL Documentation</a>
+          </div>
+
+          <hr />
+
+          <div class="container">
+
+            <div class="footer">
+              <div class="row">
+              <div class="col-sm-5 cardano logo">
+
+                <a href="https://iohk.io/projects/cardano/" target="_blank" class=""><img src="http://static.iohk.io/cardano/images/cardano-white-120.png" alt="" width="40" height="36" /> <span>Cardano </span></a>
+
+                      <p class="uppercase supported_project"><a href="https://iohk.io/projects/cardano/" target="_blank">IOHK supported project</a></p>
+              </div>
+              <div class="col-sm-7 text-right links">
+
+                  <a href="" target="_blank">About</a> |
+                  <a href="" target="_blank">Github</a> |
+                  <a href="" target="_blank">Twitter</a> |
+                  <a href="" target="_blank">Privacy policy</a> |
+                  <a href="" target="_blank">Terms of Service</a>
+
+              </div>
+            </div>
+          </div>
+
+          <p class="note">Privacy notice: We store your IP address to prevent abuse of our service. Your IP address is 194.187.251.60.</p>
+
+          </div>
+      </footer>
+  </div>
+
+
+
+  <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script>
+
+$(".navbar-side li").each(function(){
+  var txt = $(this).text().trim();
+  if(txt.length == 0){
+    $(this).remove();
+  }
+});
+
+</script>
+
+
+
+  </body>
+</html>

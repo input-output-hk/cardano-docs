@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Examples - Cardano SL</title>
+
+  <link href="../../../css/app.css" rel="stylesheet" media="screen">
+  <link href="../../../css/app-theme.1.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="all" />
+  
+  <script>
+    var mkdocs_page_name = "Examples";
+    var mkdocs_page_input_path = "cardano/plutus/examples.md";
+    var mkdocs_page_url = "/cardano/plutus/examples/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default  navbar-inverse">
+    <div class="container">
+
+      <div class="navbar-header cardano logo">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cardano-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="http://static.iohk.io/cardano/images/cardano-white-120.png" alt="" width="40" height="36" /> <span>Cardano SL</span></a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        
+
+                <form id ="rtd-search-form" class="navbar-form navbar-right" action="../../../search.html" method="get">
+                  <div class="form-group">
+                    <input type="text" name="q" class="form-control" placeholder="Search docs ... ">
+                  </div>
+                  <button type="submit" class="btn btn-default"><em class="fa fa-search"></em></button>
+                </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<div class="navbar-grad"></div>
+
+
+  <div class="container">
+      <!-- left, vertical navbar & content -->
+      <div class="row">
+          <!-- left, vertical navbar -->
+          <div class="col-md-3 col-sm-4 col-left">
+            	<ul class="nav navbar-collapse collapse navbar-side" id="cardano-nav">
+                
+                  <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../..">Introduction</a>
+        
+    </li>
+<li>
+                
+                  <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../../installation/">Installation</a>
+        
+    </li>
+<li>
+                
+                  <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../../getting-started/ui/">Navigating in the User Interface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../../getting-started/first-transaction/">Your first transaction</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+                
+                  <li>
+    <ul class="subnav">
+    <li><span>Cardano Timeline</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../../timeline/testnet/">Testnet Era</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../../timeline/bootstrap/">Boostrap Era</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../../timeline/reward/">Reward Era</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+                
+                  <li>
+    <ul class="subnav">
+    <li><span>Cardano building blocks</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../addresses/">Addresses</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../transactions/">Transactions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../proof-of-stake/">Ouroboros Consensus Algorithm</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../introduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../types/">Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Examples</a>
+        
+            <ul>
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+                
+                  <li>
+    <ul class="subnav">
+    <li><span>Contributor's Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../../for-contributors/building-from-source/">Building From Source</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+                
+                  <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+                
+              </ul>
+
+          </div>
+
+          <!-- content -->
+          <div class="col-md-9 col-sm-8">
+
+              
+<ol class="breadcrumb">
+  <li><a href="../../..">Docs</a></li>
+  
+    
+      
+        <li>Cardano building blocks</li>
+      
+    
+      
+        <li>Scripting</li>
+      
+    
+  
+  <li>Examples</li>
+  <li class="">
+    
+  </li>
+</ol>
+              <div class="main" role="main">
+                  
+                    <p>Here we'll take a look at some of the common examples of programs to give you a
+better feel for how the Plutus language works. We'll implement Peano numerals,
+cons lists, and binary trees, together with some common functions relating them.</p>
+<p>To start, let's define Peano numerals:</p>
+<pre><code>data Nat = { Zero | Suc Nat }
+</code></pre>
+<p>The naturals support a variety of functions, of course, such as addition,
+multiplication, factorial, and fibonacci, which are typical example programs.</p>
+<pre><code>add : Nat -&gt; Nat -&gt; Nat {
+  add Zero n = n ;
+  add (Suc m) n = Suc (add m n)
+}
+
+mul : Nat -&gt; Nat -&gt; Nat {
+  mul Zero _ = Zero ;
+  mul (Suc m) n = add (mul m n) n
+}
+
+fac : Nat -&gt; Nat {
+  fac Zero = Suc Zero ;
+  fac (Suc n) = mul (Suc n) (fac n)
+}
+
+fib : Nat -&gt; Nat {
+  fib Zero = Suc Zero ;
+  fib (Suc Zero) = Suc Zero ;
+  fib (Suc (Suc n)) = add (fib n) (fib (Suc n))
+}
+</code></pre>
+<p>Cons lists are also a familiar type:</p>
+<pre><code>data List a = { Nil | Cons a (List a) }
+</code></pre>
+<p>This demonstrates the use of parametric types, where he, <code>List a</code> has a type
+parameter <code>a</code> for the type of elements. So, for example, <code>List Nat</code> is the type
+of lists of Peano numerals.</p>
+<p>Lists support a variety of functions, such as <code>length</code>, <code>append</code>, and <code>map</code>:</p>
+<pre><code>length : forall a. List a -&gt; Nat {
+  length Nil = Zero ;
+  length (Cons _ xs) = Suc (length xs)
+}
+
+append : forall a. List a -&gt; List a -&gt; List a {
+  append Nil ys = ys ;
+  append (Cons x xs) ys = Cons x (append xs ys)
+}
+
+map : forall a b. (a -&gt; b) -&gt; List a -&gt; List b {
+  map _ Nil = Nil ;
+  map f (Cons x xs) = Cons (f x) (map f xs)
+}
+</code></pre>
+<p>Here we can see the use of polymorphism in Plutus. These functions work for any
+list, regardless of the element type, so we can abstract over the element type
+by using <code>forall</code>. So for instance, the type of <code>length</code> says that for any
+choice of <code>a</code>, we have a function of type <code>List a -&gt; Nat</code>.</p>
+<p>It's important to note that in Plutus, this polymorphism exists only for the
+declaration of values. Any time you use a polymorphically-declared value, the
+choice of the type variable must be fixed by the use site. You can't treat these
+declarations as giving polymorphic values in general, as in System-F. Rather,
+a polymorphic type in a declaration is an abbreviation for an infinite family of
+identical definitions that differ only in the choice of that type variable. For
+example, we could define multiple <code>length</code> functions like so:</p>
+<pre><code>lengthNat : List Nat -&gt; Nat {
+  lengthNat Nil = Zero ;
+  lengthNat (Cons _ xs) = Suc (lengthNat xs)
+}
+
+lengthBool : List Bool -&gt; Nat {
+  lengtBool Nil = Zero ;
+  lengthBool (Cons _ xs) = Suc (lengthBool xs)
+}
+
+lengthListNat : List (List Nat) -&gt; Nat {
+  lengthListNat Nil = Zero ;
+  lengthListNat (Cons _ xs) = Suc (lengthListNat xs)
+}
+</code></pre>
+<p>And they're all identical except the name and the choice for <code>a</code>. This is of
+course redundant, so we can use the polymorphic declaration given above. But,
+this declaration does not give us a value <code>length</code> with the type
+<code>forall a. List a -&gt; Nat</code>. Instead, it gives us that entire infinite family of
+declarations, but with a convenient abbreviation syntax. This is why the use of
+such polymorphic declarations requires the choice of the type variables to be
+fixed at the use site.</p>
+<p>Another common type is the type of binary trees with data in the branches:</p>
+<pre><code>data Tree a = { Leaf | Branch a (Tree a) (Tree a) }
+</code></pre>
+<p>Such trees support functions such as <code>count</code>, <code>traversal</code>, and <code>reverse</code>:</p>
+<pre><code>count : forall a. Tree a -&gt; Nat {
+  count Leaf = Zero ;
+  count (Branch _ l r) = Suc (add (count l) (count r))
+}
+
+traversal : forall a. Tree a -&gt; List a {
+  traversal Leaf = Nil ;
+  traversal (Branch x l r) = Cons x (append (traversal l) (traversal r))
+}
+
+reverse : forall a. Tree a -&gt; Tree a {
+  reverse Leaf = Leaf ;
+  reverse (Branch x l r) = Branch x (reverse r) (reverse l)
+}
+</code></pre>
+                  
+              </div>
+          </div>
+          <!-- end content -->
+      </div>
+
+  </div>
+
+
+  <div id="foot" class="foot noprint">
+      <footer>
+          <div class="grad"></div>
+
+          <div class="links network text-center">
+              <a href="http://daedaluswallet.io/" target="_blank">Daedalus Wallet</a>  |
+              <a href="" target="_blank">Cardano SL Statistics</a> |
+              <a href="" target="_blank">Cardano SL Explorer</a> |
+              <a href="" target="_blank">Cardano ADA Faucet</a> |
+              <a href="http://cardano-docs.rtfd.io" target="_blank">Cardano SL Documentation</a>
+          </div>
+
+          <hr />
+
+          <div class="container">
+
+            <div class="footer">
+              <div class="row">
+              <div class="col-sm-5 cardano logo">
+
+                <a href="https://iohk.io/projects/cardano/" target="_blank" class=""><img src="http://static.iohk.io/cardano/images/cardano-white-120.png" alt="" width="40" height="36" /> <span>Cardano </span></a>
+
+                      <p class="uppercase supported_project"><a href="https://iohk.io/projects/cardano/" target="_blank">IOHK supported project</a></p>
+              </div>
+              <div class="col-sm-7 text-right links">
+
+                  <a href="" target="_blank">About</a> |
+                  <a href="" target="_blank">Github</a> |
+                  <a href="" target="_blank">Twitter</a> |
+                  <a href="" target="_blank">Privacy policy</a> |
+                  <a href="" target="_blank">Terms of Service</a>
+
+              </div>
+            </div>
+          </div>
+
+          <p class="note">Privacy notice: We store your IP address to prevent abuse of our service. Your IP address is 194.187.251.60.</p>
+
+          </div>
+      </footer>
+  </div>
+
+
+
+  <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+<script>
+
+$(".navbar-side li").each(function(){
+  var txt = $(this).text().trim();
+  if(txt.length == 0){
+    $(this).remove();
+  }
+});
+
+</script>
+
+
+
+  </body>
+</html>
