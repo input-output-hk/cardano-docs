@@ -5,8 +5,8 @@ a{color:#007FCF;}
 
 .clear{both}
 
-@media (max-width:767px){
-  .nodesktop{display: none}
+@media (min-width:768px){
+  .nodesktop{display: none !important}
 }
 
 
@@ -36,14 +36,6 @@ hr{border-color: #222}
 .navbar-side ul{padding:0 0 0 10px;}
 .navbar-side ul ul{padding:0 0 0 10px;}
 
-/*
-.navbar-side > .active > a {
-    position: relative;
-    z-index: 2;
-    padding: 9px 15px;
-}
-*/
-
 .top {padding:100px 0 70px 0}
 .top h1{text-transform: uppercase;letter-spacing:.15em}
 
@@ -56,6 +48,10 @@ hr{border-color: #222}
 #rtd-search-form {margin:14px 0;border:1px solid rgba(255,255,255,0.2);padding:0;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
 #rtd-search-form input,
 #rtd-search-form button{background: transparent;border: 0;color:#fff;}
+
+#rtd-search-form input:focus{min-width:300px;width:300px;-webkit-transition: width .6s;-moz-transition: width .6s; -o-transition: width .6s; transition: width .6s;}
+
+
 
 @media (min-width:990px){
   .main{line-height: 1.5;font-size: 116%}
