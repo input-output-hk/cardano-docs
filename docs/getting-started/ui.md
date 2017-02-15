@@ -2,7 +2,7 @@
 
 [//]: # (<2017-01-13>)
 
-Daedalus, the wallet of Cardano SL offers a multitude of functions, that
+Daedalus, the wallet of Cardano SL, offers a multitude of functions that
 are easy and intuitive to use. Menu animations flow well and have a
 zero-distraction mode. UI is minimalistic, color scheme is neutral. The
 structure is concise and easy to follow. We've built Daedalus for your
